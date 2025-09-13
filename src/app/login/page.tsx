@@ -1,5 +1,6 @@
 import { FaUser } from "react-icons/fa6";
 import { RiLockPasswordFill } from "react-icons/ri";
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -16,7 +17,9 @@ const Login = () => {
 
       <p className="mb-10">
         Don't have an account?{" "}
-        <span className="ml-4 font-bold text-rad-blue-100">Register here</span>
+        <Link href="/signup" className="ml-4 font-bold text-rad-blue-100">
+          Register here
+        </Link>
       </p>
       <button className="px-12 py-2 rounded-sm bg-rad-blue-100 text-white font-bold">
         LOG IN
